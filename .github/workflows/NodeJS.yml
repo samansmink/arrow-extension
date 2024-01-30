@@ -31,6 +31,7 @@ jobs:
       - name: Install required node packages
         run: |
           sudo npm install -g duckdb apache-arrow mocha
+          sudo npm install duckdb apache-arrow mocha
           npm -v
           node -v
 
