@@ -1,5 +1,5 @@
-var duckdb = require('duckdb');
 var arrow = require('apache-arrow')
+var duckdb = require('duckdb');
 var assert = require('assert');
 
 const parquet_file_path = "data/parquet-testing/lineitem_sf0_01.parquet";

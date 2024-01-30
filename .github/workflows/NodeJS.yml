@@ -26,11 +26,14 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
 
       - name: Install required node packages
         run: |
-          npm install -g duckdb apache-arrow mocha
+          sudo npm install -g duckdb apache-arrow mocha
+          npm -v
+          node -v
+
 
       - name: Build duckdb
         run: |
